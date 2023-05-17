@@ -1,0 +1,120 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #b44c77;
+}
+.display{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 45%;
+    height: auto;
+    padding: 10px;
+    background-color: #142640;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #a11466;
+    box-shadow: 0px 0px 91px #c22b2b;
+}
+.display #screen{
+      width: 95%;
+      /* margin: auto; */
+      height: 70px;
+      font-size: 35px;
+      outline: none;
+      border: none;
+      text-align: right;
+      padding-right: .5em;
+      background:white;
+      border-radius: 6px;
+      box-shadow: inset 0px 0px 16px #00000020, 0px 0px 21px  #ef3dd1;
+}
+.btns{
+    width: 100%; 
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btns .row button{
+    width: 15%;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    background-color: #3d8ab7;
+    outline: none;
+    font-weight: bolder;
+    margin: 5px 0;
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 15px #00000020, 0px 0px 11px #ef3dd1;
+    transition: .1s;
+}
+.row{
+    width: 100%;
+    display:flex;
+    gap: 7px;
+    justify-content: center;
+    /* flex-direction: column; */
+    /* align-items: center; */
+}
+
+ .btns .row button:hover{
+    /* box-shadow: inset 5px 5px 8px rgba(16,16,16,.1),
+                 inset -5px -5px 8px #fff; */
+                 background: #2f5266;
+ }    
+ #eval{
+    background:#33ccef;
+    color:#fff;
+
+    box-shadow: inset  5px 5px 8px #66d9ff,
+             inset -5px -5px 8px  #00ace6;
+ }
+ #eval:hover{
+box-shadow:inset  5px 5px 8px #17818f,
+            inset -5px -5px 8px  #516ca5; 
+ }
+
+ #ce{
+    background:#1f7933;
+    color:#fff;
+
+    /* box-shadow: inset  5px 5px 8px #66d9ff,
+             inset -5px -5px 8px  #00ace6; */
+ }
+ #ce:hover{
+box-shadow:inset  5px 5px 8px rgb(51, 78, 10),
+            inset -5px -5px 8px  rgb(55, 87, 8); 
+ }
+
+
+ #ac{
+    background:#974b18;
+    color:#fff;
+
+    /* box-shadow: inset  5px 5px 8px #66d9ff,
+             inset -5px -5px 8px  #00ace6; */
+ }
+ #ac:hover{
+box-shadow:inset  5px 5px 8px red,
+            inset -5px -5px 8px  #c91e1e; 
+ }
+ @media screen and (max-width: 550px){
+    .btns .row button{
+        height: 50px;
+    }
+.display #screen{
+        height: 40px;
+    font-size: 22px;    
+    }
+    .container{
+        width: 90%;
+        height: 62%;
+    }
+ }
